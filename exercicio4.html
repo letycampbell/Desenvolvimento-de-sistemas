@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+        class Celular{
+            constructor(marca, modelo, armazenamento){
+                //atributos
+                this.marca = marca;
+                this.modelo =  modelo;
+                this.armazenamento =  armazenamento;
+    
+            }
+    
+            informacoesCelular(){
+                   return(this.marca + this.modelo + this.armazenamento)
+    
+        }
+    }
+    
+        let Celular1 = new Celular( "Apple ", 8.9 , " 62g");
+        console.log( `${Celular1.informacoesCelular()}`);
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+        class Empresa{
+            constructor(nome, receitaAnual, despesasAnuais){
+                //atributos
+                this.nome = nome;
+                this.receitaAnual =  receitaAnual;
+                this.despesasAnuais =  despesasAnuais;
+    
+            }
+    
+            calcularLucroAnual(){
+                   return (this.receitaAnual - this.despesasAnuais )
+    
+        }
+
+        exibirRelatorio(){
+                   return(this.nome + this.receitaAnual + " "+ this.despesasAnuais)
+    
+        }
+    }
+    
+        let Empresa1 = new Empresa( "Indianas  ", 200 ,  1000);
+        console.log( `Relatorio ${Empresa1.exibirRelatorio()}`);
+        console.log( `Lucro ${Empresa1.calcularLucroAnual()}`);
+     </script>
+    
+</body>
+</html>

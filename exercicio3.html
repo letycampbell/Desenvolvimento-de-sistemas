@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+
+    
+    <script>
+        class Aluno{
+            constructor(nome, nota1, nota2 ){
+                //atributos
+                this.nome = nome;
+                this.nota1 =  nota1;
+                this.nota2 =  nota2;
+    
+            }
+    
+            calcularMedia(){
+                   return(this.nome + "media " + (this.nota1 + this.nota2) / 2)
+    
+        }
+    }
+    
+        let Aluno1 = new Aluno( "Sarah, ", 10 , 8 );
+        console.log( `${Aluno1.calcularMedia()}`);
+     </script> 
+    
+</body>
+</html>

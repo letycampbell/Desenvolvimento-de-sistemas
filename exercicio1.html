@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios</title>
+</head>
+<body>
+    <script>
+    class Produtos{
+        constructor(nome, preco, quantidade){
+            //atributos
+            this.nome = nome;
+            this.preco =  preco;
+            this.quantidade =  quantidade;
+
+        }
+
+        calcularTotal(){
+               return(this.preco * this.quantidade)
+
+    }
+}
+
+    let Produtos1 = new Produtos( "Maça ", 5, 7 );
+    console.log( `${Produtos1.calcularTotal()}`);
+ </script>
+</body>
+</html>
